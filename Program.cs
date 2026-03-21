@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new() { Title = "University Grades API", Version = "v1" });
+    c.SwaggerDoc("v1", new() { Title = "University Grades API206", Version = "v1" });
 });
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -16,7 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 
-// Ensure seed data is created
+// Probando el Código
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
